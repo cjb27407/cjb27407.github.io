@@ -5,7 +5,7 @@ body {
 
 /****************   Nav Section **********************/
 nav {
-    background-color: lightblue;
+    background-color: lightgray;
     border: 5px solid black;
     display: flex;
     justify-content: space-between;
@@ -51,6 +51,8 @@ header img {
 .tagline {
     display: flex;
     justify-content: center;
+    padding: 10px;
+    text-align: center;
     background-color: lightgray;
 }
 
@@ -59,14 +61,40 @@ hr {
 
 }
 
+.sections {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    gap: 1rem;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.section-card {
+    display: grid;
+    background-color: #ba8682;
+    border: 3px solid black;
+    border-radius: 5%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    justify-content: center;
+    align-self: center;
+    padding: 10px;
+    width: 640px;
+}
+
 section h3 {
+    display: flex;
+    justify-content: center;
     font-family: "DM Serif Text", serif;
     font-weight: 600;  font-style: normal;
-    color: darkslategrey;
+    color: black;
 }
 
 section dl {
     display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    text-align: center;
 }
 
 section ul {
@@ -74,7 +102,7 @@ section ul {
 }
 
 section a {
-    color: red;
+    color: purple;
     text-decoration: none;
 }
 
@@ -88,6 +116,7 @@ section a:hover {
     display: grid;
     gap: 20px;
     grid-template-columns: 1fr 1fr 1fr;
+    padding: 20px;
 }
 
 .card img {
@@ -122,6 +151,10 @@ section a:hover {
     .three-col {
         grid-template-columns: 1fr;   /* one column */
         justify-items: center;
+    }
+
+    .section-card {
+        width: 100%;
     }
 }
 
