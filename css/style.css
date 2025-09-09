@@ -14,10 +14,22 @@ nav {
 
 /***********************  Footer Section   **************************/
 footer {
-    background-color: lightgray;
+    background-color: black;
     border: 3px ridge gray;
     display: flex;
     justify-content: center;
+}
+
+footer div {
+    background-color: white;
+}
+
+footer a {
+    color: white;
+}
+
+footer a:hover {
+    background-color: red;
 }
 
 /*********** Splash Page ************************/
@@ -44,6 +56,7 @@ header img {
 .address {
     display: flex;
     justify-content: center;
+    text-align: center;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: lightgray;
 }
