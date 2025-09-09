@@ -1,0 +1,133 @@
+body {
+  margin: 0;
+  background-color: lightgray;
+}
+
+/****************   Nav Section **********************/
+nav {
+    background-color: lightblue;
+    border: 5px solid black;
+    display: flex;
+    justify-content: space-between;
+}
+
+/***********************  Footer Section   **************************/
+footer {
+    background-color: lightgray;
+    border: 3px ridge gray;
+    display: flex;
+    justify-content: center;
+}
+
+/*********** Splash Page ************************/
+header {
+    background-color: darkred;
+    border: 6px dotted black;
+}
+
+header h1 {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 600;
+    color: white;
+}
+
+header img {
+    border: 3px solid black;
+}
+
+.address {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: lightgray;
+}
+
+.tagline {
+    background-color: lightgray;
+}
+
+/************* Sections ********************/
+hr {
+
+}
+
+section h3 {
+    font-family: "DM Serif Text", serif;
+    font-weight: 600;  font-style: normal;
+    color: darkslategrey;
+}
+
+section dl {
+    display: grid;
+}
+
+section ul {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+section a {
+    color: red;
+    text-decoration: none;
+}
+
+section a:hover {
+    background-color: lightgray;
+    text-decoration: underline;
+}
+
+/**************   Projects   *****************/
+.three-col {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card img {
+    justify-self: center;
+}
+
+.card h3 {
+    text-align: center;
+}
+
+.card {
+    display: grid;
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 5%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    justify-content: center;
+}
+
+.card:hover {
+    box-shadow: 0 16px 32px 0 rgba(0,0,0,0.2);
+}
+
+/**************   Responsiveness   *****************/
+@media (max-width: 680px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .three-col {
+        grid-template-columns: 1fr;   /* one column */
+        justify-items: center;
+    }
+}
+
+/**************   Contact Page   *****************/
+.one-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+  
+}
+
+textarea {
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 6px;
+}
